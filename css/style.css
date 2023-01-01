@@ -40,13 +40,13 @@ body {
 .signin {
   display: flex;
   border: solid #00c6bd 1px;
-  border-radius: 15px;
+  border-radius: 100%;
   margin:auto 0;
 }
 
 .signin img {
   vertical-align: bottom;
-  margin: 9px;
+  margin: 9px 10px;
   }  
 
 .site-navigation-item a {
