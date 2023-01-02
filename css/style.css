@@ -44,6 +44,14 @@ body {
   margin:auto 0;
 }
 
+.signin:hover {
+  opacity: 50% ;
+}
+
+.signin:active {
+  opacity: 30% ;
+}
+
 .signin img {
   vertical-align: bottom;
   margin: 9px 10px;
@@ -55,6 +63,14 @@ body {
   text-transform: uppercase;
   color: #163152;
   text-decoration: none;
+}
+
+.site-navigation-item a:hover {
+  color: rgba(22, 49, 82, 0.5)
+}
+
+.site-navigation-item a:active {
+  color: rgba(22, 49, 82, 0.3)
 }
 
 .main-content {
@@ -129,6 +145,41 @@ body {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.gallery {
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 120px;
+
+}
+
+.gallery img {
+  vertical-align: bottom;
+  margin: 0;
+}
+
+.gallery h2 {
+  margin: 0 auto;
+  margin-bottom: 55px;
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: #00c6bd;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  text-underline-position: under;
+}
+
+.gallery-block {
+  display: flex;
+  column-gap: 30px;
+}
+
+.gallery-smal-pictures {
+  display: flex;
+  width:170;
+  flex-wrap: wrap;
+  row-gap: 30px;
 }
 
 .news {
@@ -222,6 +273,14 @@ body {
 .post-footer {
   display: flex;
   width: 770px;
+}
+
+.post-share:hover {
+  opacity: 50%;
+}
+
+.post-share:active {
+  opacity: 30%;
 }
 
 .block-meta {
