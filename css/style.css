@@ -53,8 +53,12 @@ body {
 }
 
 .signin img {
-  vertical-align: bottom;
+  display: flex;
   margin: 9px 10px;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 18px;
   }  
 
 .site-navigation-item a {
@@ -95,10 +99,12 @@ body {
   text-transform: uppercase;
   margin-top: 0;
   margin-left: 70px;
+  margin-bottom: 40px;
 }
 
 .hero img {
-  vertical-align: bottom;
+  display: block;
+  margin: 0;
 }
 
 .blog-article {
@@ -147,6 +153,81 @@ body {
   text-transform: uppercase;
 }
 
+.yacht-rent-article {
+  margin-bottom: 120px;
+}
+
+.yacht-rent-article h2 {
+  margin-left: 55px;
+  margin-bottom: 55px;
+  text-decoration: underline;
+  text-decoration-color: #00c6bd;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  text-underline-position: under;
+}
+
+.yacht-cards-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0;
+  justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+.yacht-card-item {
+  box-sizing: border-box;
+  width: 370px;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(81, 80, 118, 0.1);
+}
+
+.yacht-card-item img {
+  display: block;
+  margin-bottom: 21px;
+}
+
+.yacht-card-item h3 {
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.yacht-card-item p {
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.yacht-features-list {
+  margin: 0;
+  padding: 0;
+  margin-left: 18px;
+  margin-bottom: 29px;
+}
+
+.yacht-features-list li {
+  margin-bottom: 4px;
+  list-style-type: disc;
+}
+
+.yacht-card-item-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.card-price-name {
+  font-weight: bold;
+}
+
+.card-price-value {
+  font-weight: bold;
+}
+
+
 .gallery {
   width: 1170px;
   margin: 0 auto;
@@ -180,6 +261,24 @@ body {
   width:170;
   flex-wrap: wrap;
   row-gap: 30px;
+}
+
+.gallery-smal-pictures a {
+  position: relative;
+}
+
+.gallery-smal-pictures a::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+a.active-item::before {
+  content: none;
 }
 
 .news {
